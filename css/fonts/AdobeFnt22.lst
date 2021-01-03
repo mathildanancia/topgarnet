@@ -1,0 +1,227 @@
+%!Adobe-FontList 1.22
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Users/cecilemaingot/Documents/2_FREELANCE/• TopGarnet/TOPGARNET_maquettes_DEF/brief_mathilde/TOPGARNET_maquettes_DEF/Document fonts/AdobeFnt22.lst
+FileLength:5505
+FileModTime:629138086
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:CircularStd-Bold
+FamilyName:Circular Std
+StyleName:Bold
+MenuName:Circular Std Bold
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:CircularStd-Bold
+WritingScript:Roman
+OutlineFileName:/Users/cecilemaingot/Documents/2_FREELANCE/• TopGarnet/TOPGARNET_maquettes_DEF/brief_mathilde/TOPGARNET_maquettes_DEF/Document fonts/CircularStd-Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:79832
+FileModTime:545260701
+NameArray:0,Mac,4,CircularStd-Bold
+NameArray:0,Win,1,Circular Std Bold
+NameArray:0,Win,16,Circular Std
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MonumentExtended-Bold
+FamilyName:Monument Extended
+StyleName:Bold
+MenuName:Monument Extended
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Monument Extended Bold
+WritingScript:Roman
+OutlineFileName:/Users/cecilemaingot/Documents/2_FREELANCE/• TopGarnet/TOPGARNET_maquettes_DEF/brief_mathilde/TOPGARNET_maquettes_DEF/Document fonts/MonumentExtended-Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:34232
+FileModTime:554736699
+NameArray:0,Mac,4,Monument Extended Bold
+NameArray:0,Win,1,Monument Extended
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:NeueMachina-Regular
+FamilyName:Neue Machina
+StyleName:Regular
+MenuName:Neue Machina
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Neue Machina Regular
+WritingScript:Roman
+OutlineFileName:/Users/cecilemaingot/Documents/2_FREELANCE/• TopGarnet/TOPGARNET_maquettes_DEF/brief_mathilde/TOPGARNET_maquettes_DEF/Document fonts/NeueMachina-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:59192
+FileModTime:575833664
+NameArray:0,Mac,4,Neue Machina Regular
+NameArray:0,Win,1,Neue Machina
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:NeueMontreal-Bold
+FamilyName:Neue Montreal
+StyleName:Bold
+MenuName:Neue Montreal
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Neue Montreal Bold
+WritingScript:Roman
+OutlineFileName:/Users/cecilemaingot/Documents/2_FREELANCE/• TopGarnet/TOPGARNET_maquettes_DEF/brief_mathilde/TOPGARNET_maquettes_DEF/Document fonts/NeueMontreal-Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:42916
+FileModTime:544378346
+NameArray:0,Mac,4,Neue Montreal Bold
+NameArray:0,Win,1,Neue Montreal
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:NeueMontreal-Regular
+FamilyName:Neue Montreal
+StyleName:Regular
+MenuName:Neue Montreal
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Neue Montreal Regular
+WritingScript:Roman
+OutlineFileName:/Users/cecilemaingot/Documents/2_FREELANCE/• TopGarnet/TOPGARNET_maquettes_DEF/brief_mathilde/TOPGARNET_maquettes_DEF/Document fonts/NeueMontreal-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:40516
+FileModTime:544378346
+NameArray:0,Mac,4,Neue Montreal Regular
+NameArray:0,Win,1,Neue Montreal
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Poppins-Bold
+FamilyName:Poppins
+StyleName:Bold
+MenuName:Poppins
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Poppins Bold
+WritingScript:Roman
+OutlineFileName:/Users/cecilemaingot/Documents/2_FREELANCE/• TopGarnet/TOPGARNET_maquettes_DEF/brief_mathilde/TOPGARNET_maquettes_DEF/Document fonts/Poppins-Bold.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:141260
+FileModTime:454975200
+NameArray:0,Win,1,Poppins
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Poppins-Light
+FamilyName:Poppins
+StyleName:Light
+MenuName:Poppins Light
+StyleBits:0
+WeightClass:300
+WidthClass:5
+AngleClass:0
+FullName:Poppins Light
+WritingScript:Roman
+OutlineFileName:/Users/cecilemaingot/Documents/2_FREELANCE/• TopGarnet/TOPGARNET_maquettes_DEF/brief_mathilde/TOPGARNET_maquettes_DEF/Document fonts/Poppins-Light.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:146472
+FileModTime:454975200
+NameArray:0,Win,1,Poppins Light
+NameArray:0,Win,16,Poppins
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Poppins-Medium
+FamilyName:Poppins
+StyleName:Medium
+MenuName:Poppins Medium
+StyleBits:0
+WeightClass:500
+WidthClass:5
+AngleClass:0
+FullName:Poppins Medium
+WritingScript:Roman
+OutlineFileName:/Users/cecilemaingot/Documents/2_FREELANCE/• TopGarnet/TOPGARNET_maquettes_DEF/brief_mathilde/TOPGARNET_maquettes_DEF/Document fonts/Poppins-Medium.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:143516
+FileModTime:454975200
+NameArray:0,Win,1,Poppins Medium
+NameArray:0,Win,16,Poppins
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Poppins-Regular
+FamilyName:Poppins
+StyleName:Regular
+MenuName:Poppins
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Poppins Regular
+WritingScript:Roman
+OutlineFileName:/Users/cecilemaingot/Documents/2_FREELANCE/• TopGarnet/TOPGARNET_maquettes_DEF/brief_mathilde/TOPGARNET_maquettes_DEF/Document fonts/Poppins-Regular.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:145312
+FileModTime:454975200
+NameArray:0,Win,1,Poppins
+%EndFont
+
