@@ -32,7 +32,11 @@
   --h1: 1.66rem;
   --h2: 1.3rem;
   --h3: 0.825rem;
+  --h4: 1.05rem;
   --p: 0.7rem;
+
+
+  --big-padding: 16.86rem;
 
   --main-padding: 7.4rem;
   --main-padding-left: 7.4rem;
@@ -147,6 +151,13 @@ img {
     font-family: "Poppins-Light", serif;
   }
 
+  h4 {
+    font-size: var(--h4) !important;
+    margin: 0 !important;
+    line-height: 1.4!important;
+    font-family: "Poppins-Light", serif;
+  }
+
   p {
     font-size: var(--p) !important;
     margin: 0 !important;
@@ -169,6 +180,10 @@ img {
 
   .red{
     color: var(--red) ;
+  }
+
+  .bold{
+    font-family: "Poppins-Bold", serif;
   }
 
   button {
@@ -199,10 +214,15 @@ img {
   .main-btn:before {
     content: "→";
   }
-
   .main-btn:hover{
     background: white ;
     color: var(--red);
+  }
+
+  .main-btn.commander{
+    margin-top: 0;
+    font-size: var(--h2) ;
+    padding: 0.5rem 1.4rem 0.5rem 1rem ;
   }
 
 
@@ -215,6 +235,17 @@ img {
     background: var(--red) ;
   }
 
+  .nav-fixed{
+    position: fixed;
+    width: 100%;
+    background: white;
+    height: 4rem;
+    z-index: 1000;
+  }
+
+  .nav-fake{
+    height: 4rem;
+  }
 
   .navbar {
     padding-bottom: .8rem !important;
@@ -224,6 +255,7 @@ img {
 
   .navbar-expand-lg {
     justify-content: space-between !important;
+    background: white;
 
   }
 
@@ -268,8 +300,13 @@ img {
     font-family: "Poppins-Bold";
   }
 
+
   .main-padding{
     padding: 0 var(--main-padding);
+  }
+
+  .big-padding{
+    padding: 0 var(--big-padding);
   }
 
   .main-padding-left{
@@ -280,12 +317,16 @@ img {
     padding-right: var(--main-padding-right);
   }
 
-  .header, .bandeau{
+  .header, .bandeau, .a-propos{
 /*    background-color: var(--blue);
 */  padding: var(--padding-one) var(--padding-two);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+  }
+
+  .a-propos{
+    position: relative;
   }
 
   .header h2, .bandeau h1 {
@@ -328,10 +369,16 @@ img {
     right: 0;
     border-left: 1.2rem solid transparent;
   }
+  .triangle.left.categ{
+    right: 50%;
+  }
 
   .triangle.right{
     left: 0;
-  border-right: 1.2rem solid transparent;
+    border-right: 1.2rem solid transparent;
+  }
+  .triangle.right.categ{
+    left: 50%;
   }
 
   .categ-title p, .categ-title h1 {
@@ -399,6 +446,128 @@ img {
   }
 
 
+/*/ PAGES CATÉGORIE */
+  .categ.categ-title{
+    position: fixed;
+    width: 100%;
+    position:fixed;
+    transition: height 500ms;
+    padding: 0.8em var(--main-padding);
+    z-index: 100;
+  }
+  .categ.categ-title.tiny {
+    height: 2.1rem;
+  }
+
+  .categ.categ-title.tiny p, .categ.categ-title.tiny .circle{
+    display: none;
+  }
+
+  .categ.categ-title.tiny h1{
+    text-align: center;
+    margin-top: -0.2em !important;
+    font-size: var(--h3) !important;
+    font-family: "Poppins-Bold", serif;
+  }
+
+  .categ.categ-title.tiny div:nth-child(2){
+    width: 100%;
+  }
+
+  .categ-produits {
+    padding-bottom: var(--padding-small);
+  }
+
+  .explications {
+    padding-top: var(--padding-small);
+    padding-bottom: var(--padding-small);
+  }
+
+  .explications h1{
+    color: var(--red);
+    padding-bottom: var(--padding-small);
+  }
+
+  .explications h2{
+
+  }
+
+  .paragraphe{
+    padding-bottom: var(--padding-small);
+  }
+
+
+/*Product page */
+  .product-page{
+/*    display: none;
+*/  }
+
+  .swiper-container {
+    width: 100%;
+    height: 6rem;
+  }
+
+  .swiper-slide {
+    font-size: 18px;
+    background-color: var(--grey);
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .product-main-title{
+    display: flex;
+    align-items: center;
+  }
+
+  .product-main-title:before{
+    content: url("../img/polygone.svg");
+    width: 2rem;
+    padding: 0em 0.5em 0 0;
+    margin-top: 0.5em;
+  }
+
+/*  .swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+    display: none !important;
+  }*/
+  .swiper-button-next:after {
+    color: var(--red) !important;
+    content: "→" !important;
+    padding-right: var(--padding-one);
+    font-size: xx-large !important;
+  }
+
+  .swiper-button-prev:after {
+    color: var(--red) !important;
+    content: "←" !important;
+    padding-left: var(--padding-one);
+    font-size: xx-large !important;
+  }
+
+  .product-details{
+    background-color: var(--grey);
+    position: relative;
+  }
+
+  .description-image {
+    width: 100%;
+    padding-bottom: var(--padding-xs);
+  }
+
+
 @media all and (max-width: 1024px) {
   :root {
 
@@ -452,12 +621,19 @@ img {
 
 }
 
+
 @media all and (max-width: 768px) {
   :root {
-    --h1: 1.3rem;
-    --h2: 0.8rem;
-    --h3: 0.6rem;
-    --p: 0.6rem;
+    --h1: 1.5rem;
+    --h2: 1.2rem;
+    --h3: 1.9rem;
+    --h4: 1.2rem;
+    --p: 0.7rem;
+    --big-padding: 2rem;
+  }
+
+  h1 {
+    line-height: 1!important;
   }
 
   .nav-item {
@@ -481,6 +657,12 @@ img {
     --padding-one: 2rem;
     --padding-two: 2rem;
     --padding-small: 1.3rem;
+
+     --h1: 1.3rem;
+    --h2: 0.8rem;
+    --h3: 0.9rem;
+    --h4: 0.9rem;
+    --p: 0.6rem;
   }
 
   .produit-image {
@@ -493,6 +675,10 @@ img {
 
   .categ-title.right {
     margin-top: var(--padding-small);
+  }
+
+  .col-sm-9 {
+   padding: 0;
   }
 
 }

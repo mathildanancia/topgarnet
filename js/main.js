@@ -54,3 +54,23 @@ if (myTag.length > 170) {
   var truncated = myTag.trim().substring(0, 170).split(" ").slice(0, -1).join(" ") + "…";
   $('.truncate').text(truncated);
 }
+
+
+
+if ($('#product-page').hasClass('show')) {
+  $('.categ-title').addClass('tiny');
+} else {
+  // Shrink menu when scrolls down
+  $(window).on("scroll touchmove", function () {
+    $('.categ-title').toggleClass('tiny', $(document).scrollTop() > 0);
+  });
+}
+
+
+// Slider menu
+var swiper = new Swiper('.swiper-container', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
