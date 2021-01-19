@@ -84,6 +84,14 @@ video {
   display: none !important;
 }
 
+.hide{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
 .invisible {
   visibility: hidden;
 }
@@ -163,18 +171,19 @@ img {
     margin: 0 !important;
   }
 
-  a{
+  a, .product-btn{
     color: var(--red) !important;
     text-decoration: none !important;
     font-family: "Poppins-Bold", serif;
     font-size: var(--p) !important;
+    cursor: pointer;
 
   }
   a[href]::after {
     content: "" !important;
   }
 
-  .tab-content a[href]::before {
+  .tab-content a[href]::before, .product-btn::before {
       content: "→ ";
   }
 
@@ -247,6 +256,7 @@ img {
     height: 4rem;
   }
 
+
   .navbar {
     padding-bottom: .8rem !important;
     border-bottom: 2px solid var(--grey);
@@ -292,10 +302,19 @@ img {
     margin: 0 0 0 1rem;
   }
 
-  .nav-item a {
+  .nav-item a, .nav-item h3 {
     font-size: var(--h3) !important;
     font-family: "Poppins-Medium";
   }
+
+  .nav-item h3 {
+    margin-top: 1px !important;
+  }
+
+  .nav-item h3:hover {
+    cursor: default;
+  }
+
   .nav-item .active {
     font-family: "Poppins-Bold";
   }
@@ -445,8 +464,24 @@ img {
     margin: 9rem var(--main-padding) var(--padding-small) var(--main-padding);
   }
 
+/*/ Menu abrasifs */
+.abrasifs-menu{
+  width: 100%;
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+}
 
-/*/ PAGES CATÉGORIE */
+.abrasifs-menu .categ.categ-title{
+  width: 50%;
+  position:initial;
+}
+
+.abrasifs-menu .categ.categ-title:hover{
+  cursor: pointer;
+}
+
+/*/ PAGES ABRASIFS */
   .categ.categ-title{
     position: fixed;
     width: 100%;
@@ -455,6 +490,7 @@ img {
     padding: 0.8em var(--main-padding);
     z-index: 100;
   }
+
   .categ.categ-title.tiny {
     height: 2.1rem;
   }
@@ -470,7 +506,26 @@ img {
     font-family: "Poppins-Bold", serif;
   }
 
-  .categ.categ-title.tiny div:nth-child(2){
+  .categ.categ-title.alwaystiny div:nth-child(2){
+    width: 100%;
+  }
+
+  .categ.categ-title.alwaystiny {
+    height: 2.1rem;
+  }
+
+  .categ.categ-title.alwaystiny p, .categ.categ-title.alwaystiny .circle{
+    display: none;
+  }
+
+  .categ.categ-title.alwaystiny h1{
+    text-align: center;
+    margin-top: -0.2em !important;
+    font-size: var(--h3) !important;
+    font-family: "Poppins-Bold", serif;
+  }
+
+  .categ.categ-title.alwaystiny div:nth-child(2){
     width: 100%;
   }
 
