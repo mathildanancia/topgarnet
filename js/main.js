@@ -1,4 +1,5 @@
 // Menu souligné
+
 function navbarMagicline() {
   var $el,
     leftPos,
@@ -48,10 +49,10 @@ function navbarMagicline() {
     },
   );
 
-  // $(".product-btn").click(
-  //   function() {moveToAbrasif();
-  //   },
-  // );
+  $(".product-btn").click(
+    function() {moveToAbrasif();
+    },
+  );
 
   $(".navbar-nav li .nav-link").click(
     function() {
@@ -64,9 +65,10 @@ function navbarMagicline() {
       });
 
       $("html, body").animate({ scrollTop: 0 }, "slow");
-//     return false;
-      // $(".product-page").addClass("hidden");
-      // $(".tab-pane").removeClass("hidden");
+
+      $("#product-page").addClass("hide");
+      $(".tab-pane").removeClass("hidden");
+
     },
   );
 
@@ -160,7 +162,6 @@ if (myTag.length > 170) {
   $('.truncate').text(truncated);
 }
 
-
 // Slider menu
 var swiper = new Swiper('.swiper-container', {
   navigation: {
@@ -170,18 +171,17 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 
-// //Go to products depuis l'index
-// $(".product-btn").click(
-//   function() {
-//     $("#product-page").removeClass("hidden");
-//     $(".tab-pane").addClass("hidden");
+//Go to products depuis l'index
+$(".product-btn").click(
+  function() {
+    $("#product-page").removeClass("hide");
+    $(".tab-pane").addClass("hidden");
 
-//     $(".nav-link").removeClass("active");
-//     $("#categ1-tab").addClass("active");
-//     $(".decoupe-jet-deau .categ-title, .aerogommage .categ-title").addClass("invisible");
+    $(".nav-link").removeClass("active");
+    $("#categ1-tab").addClass("active");
+    $(".decoupe-jet-deau .categ-title, .aerogommage .categ-title").addClass("invisible");
 
-//     $("html, body").animate({ scrollTop: 0 }, "slow");
-//     return false;
-//   },
-// );
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+  },
+);
 
