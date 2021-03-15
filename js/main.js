@@ -22,14 +22,24 @@ function navbarMagicline() {
     },
   );
 
-  function moveToAbrasif(){
-    $el = $("#categ1-tab");
-      newWidth = $el.parent().width() / 2;
-      leftPos = $el.position().left + newWidth / 2;
-      $magicLine.stop().animate({
-        left: leftPos,
-        width: newWidth
-      });
+  function magicLineThis(){
+    $el = $(".navbar-nav li .nav-link");
+    newWidth = $el.parent().width() / 2;
+    leftPos = $el.position().left + newWidth / 2;
+    $magicLine.stop().animate({
+      left: leftPos,
+      width: newWidth
+    });
+  };
+
+  function magicLineInit() {
+    $el = $(".navbar-nav li .active");
+    newWidth = $el.parent().width() / 2;
+    leftPos = $el.position().left + newWidth / 2;
+    $magicLine.stop().animate({
+      left: leftPos,
+      width: newWidth
+    });
   };
 
   $(".navbar-nav li .nav-link").hover(
@@ -44,6 +54,16 @@ function navbarMagicline() {
     },
   );
 
+  function moveToAbrasif(){
+    $el = $("#categ1-tab");
+      newWidth = $el.parent().width() / 2;
+      leftPos = $el.position().left + newWidth / 2;
+      $magicLine.stop().animate({
+        left: leftPos,
+        width: newWidth
+      });
+  };
+
   $(".abrasifs-menu").hover(
     function() {moveToAbrasif();
     },
@@ -57,7 +77,7 @@ function navbarMagicline() {
   $(".navbar-nav li .nav-link").click(
     function() {
       $el = $(this);
-      newWidth = $el.parent().width() / 2 ;
+      newWidth = $el.parent().width() / 2;
       leftPos = $el.position().left + newWidth / 2;
       $magicLine.stop().animate({
         left: leftPos,
@@ -72,9 +92,15 @@ function navbarMagicline() {
     },
   );
 
+
   $(".navbar, .abrasifs-menu").mouseout(
+    function() {magicLineInit();
+    },
+  );
+
+  $(".navbar-brand").click(
     function() {
-      $el = $(".navbar-nav li .active");
+      $el = $("#home-tab");
       newWidth = $el.parent().width() / 2;
       leftPos = $el.position().left + newWidth / 2;
       $magicLine.stop().animate({
@@ -83,6 +109,19 @@ function navbarMagicline() {
       });
     },
   );
+
+  $(".header .main-btn").click(
+    function() {
+      $el = $("#about-tab");
+      newWidth = $el.parent().width() / 2;
+      leftPos = $el.position().left + newWidth / 2;
+      $magicLine.stop().animate({
+        left: leftPos,
+        width: newWidth
+      });
+    },
+  );
+
 };
 navbarMagicline();
 
@@ -106,6 +145,29 @@ $(".abrasifs-menu").hover(function() {
 });
 
 
+// logo click
+$(".navbar-brand").click(
+  function() {
+    $(".nav-link").removeClass("active");
+    $("#home-tab").addClass("active");
+    $(".tab-pane").removeClass("active");
+    $(".tab-pane").removeClass("show");
+    $("#home").addClass("active");
+    $("#home").addClass("show");
+  },
+);
+
+// en savoir plus header click
+$(".header .main-btn").click(
+  function() {
+    $(".nav-link").removeClass("active");
+    $("#about-tab").addClass("active");
+    $(".tab-pane").removeClass("active");
+    $(".tab-pane").removeClass("show");
+    $("#about").addClass("active");
+    $("#about").addClass("show");
+  },
+);
 
 // choix d'abrasifs
 $(".abrasifs-menu .left").click(
